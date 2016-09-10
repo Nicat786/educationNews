@@ -10,6 +10,11 @@
             font-family: 'Raleway', sans-serif;
             color:white;
         }
+        .navbar-header{
+            button{
+                i {color:white;}
+            }
+        }
         ul{
             .active{
                 color:$navTextColor;
@@ -18,7 +23,7 @@
                 a{
                     transition:all 0.2s ease;
                     background:transparent !important;
-                    &:hover{
+                    &:hover, &:focus{
                         color:$navTextColor;
                         background:none;
                     }
@@ -40,17 +45,30 @@
                 }
             }
         }
+        
         .form-group{
-                input{
-                    margin-right:-4px;
-                    border-radius:0;
-                    border:none;
-                }
-                button{
-                    border-radius:0;
-                    border-color:transparent;
-                    i{ color:$navTextColor; }
-                }
+            .form-control{
+                display:inline-block !important;
+                border:none !important;
+            }
+            input{
+                margin-right:-4px;
+                border-radius:0; 
+            }
+            button{
+                border-radius:0;
+                border-color:transparent;
+                i{ color:$navTextColor; }
+            }
+        }
+        .collapsed-form{
+            margin-top:10px;
+            .form-control{
+                width:80%;
+            }
+            button{
+                margin-top:-3px;
+            }
         }
     }   
     

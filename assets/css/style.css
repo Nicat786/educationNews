@@ -148,12 +148,14 @@
   #header .navbar a {
     font-family: 'Raleway', sans-serif;
     color: white; }
+  #header .navbar .navbar-header button i {
+    color: white; }
   #header .navbar ul .active {
     color: #F44336; }
   #header .navbar ul li a {
     transition: all 0.2s ease;
     background: transparent !important; }
-    #header .navbar ul li a:hover {
+    #header .navbar ul li a:hover, #header .navbar ul li a:focus {
       color: #F44336;
       background: none; }
   #header .navbar ul li #signUp {
@@ -167,15 +169,23 @@
       border-left: 5px solid transparent; }
       #header .navbar ul li ul li:hover {
         border-color: #F44336; }
+  #header .navbar .form-group .form-control {
+    display: inline-block !important;
+    border: none !important; }
   #header .navbar .form-group input {
     margin-right: -4px;
-    border-radius: 0;
-    border: none; }
+    border-radius: 0; }
   #header .navbar .form-group button {
     border-radius: 0;
     border-color: transparent; }
     #header .navbar .form-group button i {
       color: #F44336; }
+  #header .navbar .collapsed-form {
+    margin-top: 10px; }
+    #header .navbar .collapsed-form .form-control {
+      width: 80%; }
+    #header .navbar .collapsed-form button {
+      margin-top: -3px; }
 
 #footer {
   padding: 15px;
