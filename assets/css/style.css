@@ -141,6 +141,68 @@
     padding-top: 20px; }
     #vacancies .item .smallItemContent {
       padding-left: 15px; } }
+<<<<<<< HEAD
+=======
+#header .navbar {
+  background-color: #191B28 !important;
+  border-radius: 0;
+  border: none; }
+  #header .navbar a {
+    font-family: 'Raleway', sans-serif;
+    color: white; }
+  #header .navbar ul .active {
+    color: #F44336; }
+  #header .navbar ul li a {
+    transition: all 0.2s ease;
+    background: transparent !important; }
+    #header .navbar ul li a:hover {
+      color: #F44336;
+      background: none; }
+  #header .navbar ul li #signUp {
+    color: #F44336; }
+  #header .navbar ul li ul {
+    border: none;
+    border-radius: 0;
+    background-color: #191B28; }
+    #header .navbar ul li ul li {
+      transition: all 0.2s ease;
+      border-left: 5px solid transparent; }
+      #header .navbar ul li ul li:hover {
+        border-color: #F44336; }
+  #header .navbar .form-group input {
+    margin-right: -4px;
+    border-radius: 0;
+    border: none; }
+  #header .navbar .form-group button {
+    border-radius: 0;
+    border-color: transparent; }
+    #header .navbar .form-group button i {
+      color: #F44336; }
+
+#footer {
+  padding: 15px;
+  background: #191B28;
+  color: white;
+  font-family: 'Raleway', sans-serif; }
+  #footer span {
+    float: left;
+    margin-top: 15px;
+    display: block; }
+  #footer i {
+    float: right;
+    text-align: center;
+    padding: 10px 0;
+    width: 35px;
+    margin: 5px;
+    color: #F44336;
+    border: 1px solid #F44336;
+    border-radius: 50%;
+    transition: all 0.2s ease; }
+    #footer i:hover {
+      background: #F44336;
+      color: #191B28; }
+
+>>>>>>> 5b1a1e4e06dafe7909cef9e01435a4b58bb7cbbc
 #author h1 {
   font-size: 48px;
   font-weight: 600;
