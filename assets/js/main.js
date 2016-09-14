@@ -1,33 +1,26 @@
 jQuery(document).ready(function($) {
-	console.log('ready!!!')
-    
-    
-//Navbar
-    
+    var dropp1=0;
+$('#drop11').click(function (argument) {
 
+    if (dropp1==0) {
+    $('#drop1').css('display','block')
+    dropp1=1;
+}
+else{
+     $('#drop1').css('display','none')
+    dropp1=0;
+}
+})
+
+
+
+
+$('#drop11').hover(function() {
     
-$("#header .dropdown")
-.hover(function() {
-        console.log("hover");
-    if( $(window).width()>768){
-        console.log("inside of if");
-        $(this).find(".dropdown-menu").stop().slideDown()
-        $(this).find(">a").css("color","#F44336")
-    }
-    
-    if( $(window).width()<768){
-        console.log("inside of ifa");
-       
-    }
-}, function() {    
-        console.log("out function");
-    if( $(window).width()>768){
-        console.log("out if");
-        $(this).find(".dropdown-menu").stop().slideUp();
-        $(this).find(">a").css("color","white")
-    }
+    $('#drop1').css('display','block')
+}, function() {
+    $('#drop1').css('display','none')
 });
-    
     
    
     
