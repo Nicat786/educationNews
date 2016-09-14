@@ -262,6 +262,7 @@
         border: none; }
 
 #footer {
+  margin-top: 30px;
   padding: 15px;
   background: #191B28;
   color: white;
