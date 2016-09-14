@@ -4,24 +4,31 @@ jQuery(document).ready(function($) {
     
 //Navbar
     
+
     
-$("#header .dropdown").mouseenter(function(){
-    console.log("in")
+$("#header .dropdown")
+.hover(function() {
+        console.log("hover");
     if( $(window).width()>768){
-    console.log("Yep")
-    $(this).find(">a").css("color","#F44336")
-    $(this).find(".dropdown-menu").slideDown()
+        console.log("inside of if");
+        $(this).find(".dropdown-menu").stop().slideDown()
+        $(this).find(">a").css("color","#F44336")
     }
- })
-$("#header .dropdown").mouseleave(function(){
-    console.log("out")
+    
+    if( $(window).width()<768){
+        console.log("inside of ifa");
+       
+    }
+}, function() {    
+        console.log("out function");
     if( $(window).width()>768){
-    console.log("Out")
-    $(this).find(">a").css("color","white")
-    $(this).find(".dropdown-menu").slideUp();
+        console.log("out if");
+        $(this).find(".dropdown-menu").stop().slideUp();
+        $(this).find(">a").css("color","white")
     }
- })
-
-
-
+});
+    
+    
+   
+    
 });

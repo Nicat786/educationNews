@@ -1,4 +1,7 @@
 @import 'partials/_variables.scss';
+@font-face { font-family: 'FontAwesome'; src: url('../vendors/fontawesome/fonts/FontAwesome.otf'); } 
+
+
 #header{
     padding-bottom: 60px;
     .navbar{
@@ -15,6 +18,7 @@
             button{
                 i {color:white;}
             }
+            
         }
         ul{
             .active{
